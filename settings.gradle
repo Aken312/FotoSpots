@@ -1,0 +1,2 @@
+rootProject.name='FotoSpots'
+include ':app'

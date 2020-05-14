@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginfragment">
+    <fragment
+        android:id="@+id/loginfragment"
+        android:name="com.example.fotospots.Loginfragment"
+        android:label="fragment_loginfragment"
+        tools:layout="@layout/fragment_loginfragment" >
+        <action
+            android:id="@+id/action_loginfragment_to_spotsFragment"
+            app:destination="@id/spotsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/spotsFragment"
+        android:name="com.example.fotospots.SpotsFragment"
+        android:label="fragment_spots"
+        tools:layout="@layout/fragment_spots" >
+        <action
+            android:id="@+id/action_spotsFragment_to_trucosFragment"
+            app:destination="@id/trucosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trucosFragment"
+        android:name="com.example.fotospots.TrucosFragment"
+        android:label="fragment_trucos"
+        tools:layout="@layout/fragment_trucos" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fotospots.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.fotospots.signupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" />
+</navigation>
